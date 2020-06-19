@@ -30,9 +30,9 @@ if (isset($_POST['submit'])) {
 
     if (mysqli_query($connect,$query)) {
         # code...
-        echo '<meta http-equiv="refresh" content="1;url=index.php?pg=view_kamar">';
+        echo '<meta http-equiv="refresh" content="1;url=index.php?pg=view_kategori">';
 
-        header("location:index.php?pg=view_kategori");
+        // header("location:index.php?pg=view_kategori");
     }else{
         echo " <div class='alert alert-danger' role='alert'>
         <h4 class='alert-heading'>Update Data Gagal !</h4>
