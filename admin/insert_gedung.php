@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
     $nama_gedung = $_POST['nama_gedung'];
     $lokasi = $_POST['lokasi'];
     
-    $query =" INSERT INTO kategori VALUES ('$kode_gedung','$nama_gedung','$lokasi' ) ";
+    $query =" INSERT INTO gedung VALUES ('$kode_gedung','$nama_gedung','$lokasi' ) ";
 
     if (mysqli_query($connect, $query)) {
         # code...

@@ -19,6 +19,7 @@
                 <label class="control-label col-2 ">Lokasi Gedung</label>
                 <div class="col-10 mb-1">
                     <select name="lokasi" class="form-control typo-form" required>
+
                         <option value="">Pilih Kategori</option>
                         <option value="Gedung Utara">Gedung Utara</option>
                         <option value="Gedung Selatan">Gedung Selatan</option>

@@ -30,8 +30,14 @@
                 <div class="col-10 mb-1">
                     <select name="kategori_kmr" class="form-control typo-form" required>
                         <option value="">Pilih Kategori</option>
-                        <option value="1">King Room</option>
-                        <option value="2">Queen Room</option>
+                        <?php
+                    $data = mysqli_query($connect,"SELECT * FROM  kategori");
+                    while ($bagi = mysqli_fetch_assoc($data)) {
+                    ?>
+                        <option value="<? $bagi=['kode_kategori'] ?>">
+                            <?=$bagi['nama_kategori'] ?>
+                        </option>
+                        <?php } ?>
                     </select>
 
                 </div>
@@ -39,8 +45,14 @@
                 <div class="col-10 mb-1">
                     <select name="lokasi_gdg" class="form-control typo-form" required>
                         <option value="">Pilih Gedung</option>
-                        <option value="1">Gedung Pasific</option>
-                        <option value="2">Gedung Atlantic</option>
+                        <?php
+                    $data = mysqli_query($connect,"SELECT * FROM  gedung");
+                    while ($bagi = mysqli_fetch_assoc($data)) {
+                    ?>
+                        <option value="<? $bagi=['kode_gedung'] ?>">
+                            <?=$bagi['nama_gedung'] ?>
+                        </option>
+                        <?php } ?>
                     </select>
 
                 </div>

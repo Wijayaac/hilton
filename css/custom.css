@@ -27,6 +27,12 @@
     font-family:  'cabin';
     size: 14px;
 }
+.navbar-typo{
+    font-family: 'cabin' !important;
+    size: 22px !important;
+    color: white !important;
+
+}
 .footer-typo{
     font-family: 'cabin';
     size: 24px !important;
@@ -36,6 +42,11 @@
     font-family: 'cabin';
     size: 24px !important;
     color: black;
+}
+.drop{
+    font-size: 20px;
+    margin-left: 5px;
+    color: #F0A636;
 }
 .angle{
     margin-left: 125px;
@@ -88,4 +99,49 @@
 .icon-action{
     color:#F0A636 !important;
 
+}
+
+
+.overlay{
+    background-color: black;
+}
+.over-img {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../img/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 600px;
+    padding-top: 50px;
+}
+.header-over{
+    margin-top: 350px;
+    margin-left: 150px;
+}
+.para-over{
+    margin-left: 150px;
+    font-size: 22px;
+    width: 600px;
+}
+.btn-over{
+
+    border-radius: 20px !important;
+    position: absolute;
+    right: 100px;
+    bottom: 110px;
+}
+.btn-menu{
+    border-radius: 30px !important;
+    width: 300px;
+}
+.img-menu{
+    height: 300px;
+    width: 300px;
+}
+.margin-plus{
+    margin-top: 50px !important;
+}
+.card-akm{
+    height: 150px;
+    width: 150px;
 }

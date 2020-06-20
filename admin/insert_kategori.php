@@ -25,10 +25,10 @@ include 'auth.php';
 
 if (isset($_POST['submit'])) {
     # code...
-    $kode_kategori = $_POST['kode_gedung'];
-    $nama_kategori = $_POST['nama_gedung'];
+    $kode_kategori = $_POST['kode_kategori'];
+    $nama_kategori = $_POST['nama_kategori'];
     
-    $query =" INSERT INTO kategori VALUES ('$kode_kategori','$nama_kategori', ) ";
+    $query =" INSERT INTO kategori VALUES ('$kode_kategori','$nama_kategori') ";
 
     if (mysqli_query($connect, $query)) {
         # code...

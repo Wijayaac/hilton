@@ -9,7 +9,7 @@
                 <label for="validationDefault01" class="control-label col-2">Kode Kategori</label>
                 <div class="col-10 mb-1">
                     <input type="text" class="form-control typo-form" id="validationDefault01"
-                        placeholder="Masukkan Angka Saja" required name="kode_kategori">
+                        placeholder="Masukkan Angka Saja" name="kode_kategori" required>
                 </div>
                 <label class="control-label col-2" for="validationDefault02">Nama Kategori</label>
                 <div class="col-10 mb-1">
