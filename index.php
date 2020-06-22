@@ -40,32 +40,18 @@ $connect = open_connection();
                             Pilihan Kamar <i class="fas fa-angle-down drop"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <?php
-                    $data = mysqli_query($connect,"SELECT * FROM  kamar");
-                    while ($bagi = mysqli_fetch_assoc($data)) {
-                    ?>
-                            <a class="dropdown-item" href="#"><?=$bagi['nama_kamar'] ?></a>
-                            <?php } ?>
-
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link navbar-typo ml-5" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Fasilitas <i class="fas fa-angle-down drop"></i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <?php
-                    $data = mysqli_query($connect,"SELECT * FROM  kamar");
-                    while ($bagi = mysqli_fetch_assoc($data)) {
-                    ?>
-                            <a class="dropdown-item" href="#"><?=$bagi['nama_kamar'] ?></a>
-                            <?php } ?>
+                            <a class="dropdown-item" href="index.php?pg=kamar_king">Kamar King</a>
+                            <a class="dropdown-item" href="index.php?pg=kamar_queen">Kamar Queen</a>
 
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-typo ml-5" href="#">
+                        <a class="nav-link navbar-typo ml-5" href="index.php?pg=akomodasi">
+                            Fasilitas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-typo ml-5" href="index.php?pg=penawaran">
                             Penawaran Spesial
                         </a>
                     </li>
@@ -78,68 +64,60 @@ $connect = open_connection();
             </a>
         </div>
     </nav>
-    <div class="overlay">
-        <div class="card bg-dark text-white over-img ">
-            <div class="card-img-overlay">
-                <h1 class="card-title header-over">Santai Sejenak</h1>
-                <p class="card-text para-over">Berhenti sejenak dari kesibukan, relaksasikan tubuh dari keseharian.
-                    Butuh waktu
-                    untuk bersantai ?</p>
+    <?php
+if (isset($_GET['pg'])) {
+    # code...
+    if ($_GET['pg'] == "kategori") {
+        # code...
+        include_once "kategori.php";
+    }elseif ($_GET['pg'] == "kamar_king") {
+        # code...
+        include_once "kamar_king.php";
+    }elseif ($_GET['pg'] == "kamar_queen") {
+        # code...
+        include_once "kamar_queen.php";
+    }elseif ($_GET['pg'] == "akomodasi") {
+        # code...
+        include_once "akomodasi.php";
+    }elseif ($_GET['pg'] == "penawaran") {
+        # code...
+        include_once "penawaran.php";
+    }else {
+        include_once "home.php";
+    }
+} else {
+    include_once "home.php";
+}
+?>
+
+    <div class="container-fluid  bg-footer footer-typo py-5  ">
+        <div class="row">
+            <div class="col-4">
+                <h6>Informasi lebih lanjut</h6>
+                <span class="inden">
+                    <br>Kontak Kami
+                    <br>Lokasi Kami
+                    <br>Booking Kamar
+                </span>
             </div>
-            <a href="#"><button class="btn btn-warning btn-over text-light" type="button">Pesan Sekarang <i
-                        class="fas fa-arrow-right">
-                    </i></button></a>
-        </div>
-    </div>
-    <div class="container mt-5">
-        <div class="row pt-5 mt-5">
-            <div class="col-lg-6 px-5 pl-5 pr-5 margin-plus">
-                <h1 class="text-center">King Suite</h1>
-                <p>Berlibur dan bekerja di waktu bersamaan, nikmati waktu liburanmu dan pekerjaan tetap selesai
-                    ,tentunya tetap bisa santai.</p>
-                <button class="btn btn-primary btn-menu mx-auto" type="button">Lihat Selengkapnya <i
-                        class="fas fa-angle-right icon-action ml-5"></i></button>
+            <div class="col-4">
+                <h6>Perlu bantuan ?</h6>
+                <span class="inden">
+                    <br>Hubungi 0361-92817
+                </span>
             </div>
-            <div class="col-6-lg mx-auto margin-plus">
-                <img src="img/home.jpg" class="img-thumbnail img-menu " alt="" srcset="">
+            <div class="col-4">
+                <h6>Ingin mendengar kabar dari kami? , Daftarkan Dirimu</h6>
+                <input type="text" name="" class="round mt-3" id="" placeholder="Masukkan E-mail">
+                <button class="btn btn-warning round mt-2 footer-typo" type="button">Kabari Saya!</button>
+                <p class="ml-4 mt-3">
+                    <i class="fab fa-youtube-square icon mx-3"></i>
+                    <i class="fab fa-linkedin icon mx-3"></i>
+                    <i class="fab fa-facebook-square icon mx-3"></i>
+                    <i class="fab fa-twitter-square icon mx-3"></i>
+                    <i class="fab fa-instagram-square icon mx-3"></i>
+                </p>
             </div>
-            <div class="col-6-lg mx-auto margin-plus">
-                <img src="img/home.jpg" class="img-thumbnail img-menu " alt="" srcset="">
-            </div>
-            <div class="col-lg-6 px-5 pl-5 pr-5 margin-plus">
-                <h1 class="text-center">King Suite</h1>
-                <p>Berlibur dan bekerja di waktu bersamaan, nikmati waktu liburanmu dan pekerjaan tetap selesai
-                    ,tentunya tetap bisa santai.</p>
-                <button class="btn btn-primary btn-menu mx-auto" type="button">Lihat Selengkapnya <i
-                        class="fas fa-angle-right icon-action ml-5"></i></button>
-            </div>
-        </div>
-        <div class="row mt-5 pt-5">
-            <div class="col-md-3">
-                <img src="img/home.jpg" class="img-thumbnail cad-akm" alt="">
-                <h5 class="mt-3 px-5">Destinasi Wisata Sekitar Kami</h5>
-            </div>
-            <div class="col-md-3">
-                <img src="img/bar.jpg" class="img-thumbnail cad-akm" alt="">
-                <h5 class="mt-3 px-5">Hiburan Setiap Minggu</h5>
-            </div>
-            <div class="col-md-3">
-                <img src="img/food.jpg" class="img-thumbnail cad-akm" alt="">
-                <h5 class="mt-3 px-5">Hidangan Spesial Untuk Anda</h5>
-            </div>
-            <div class="col-md-3">
-                <img src="img/sentuh.jpg" class="img-thumbnail cad-akm" alt="">
-                <h5 class="mt-3 px-5">Sentuhan Relaksasi Saat Berekreasi</h5>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Title</h5>
-            <p class="card-text">Content</p>
-        </div>
-        <div class="card-footer">
-            Footer
         </div>
     </div>
     <!-- Optional JavaScript -->

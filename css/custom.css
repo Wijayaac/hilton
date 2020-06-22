@@ -114,6 +114,42 @@
     height: 600px;
     padding-top: 50px;
 }
+.king-img {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../item/1201.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 600px;
+    padding-top: 50px;
+}
+.queen-img {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../item/1202.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 600px;
+    padding-top: 50px;
+}
+.akomodasi-img {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../img/akomodasi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 600px;
+    padding-top: 50px;
+}
+.penawaran-img {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../img/nawar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 600px;
+    padding-top: 50px;
+}
 .header-over{
     margin-top: 350px;
     margin-left: 150px;
@@ -144,4 +180,28 @@
 .card-akm{
     height: 150px;
     width: 150px;
+}
+.inden{
+    display: block;
+    margin-left: 50px;
+}
+.round{
+    border-radius: 20px !important;
+    width: 80%;
+}
+.bawah{
+    right: 10px;
+    font-size: 24px;
+    margin-right: 50px;
+    color:#F0A636 !important;
+}
+.title{
+    text-decoration: blue underline;
+}
+.garis-bawah{
+    text-decoration: underline blue;
+}
+.img-ako{
+    height: 400px; 
+    width: 400px;
 }
