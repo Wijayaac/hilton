@@ -82,6 +82,9 @@ if (isset($_GET['pg'])) {
     }elseif ($_GET['pg'] == "penawaran") {
         # code...
         include_once "penawaran.php";
+    }elseif ($_GET['pg'] == "berhasil") {
+        # code...
+        include_once "berhasil.php";
     }else {
         include_once "home.php";
     }

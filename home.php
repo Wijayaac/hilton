@@ -23,6 +23,9 @@
         <div class="col-6-lg mx-auto margin-plus">
             <img src="item/1201.jpg" class="img-thumbnail img-menu " alt="" srcset="">
         </div>
+
+    </div>
+    <div class="row pt-5 mt-5">
         <div class="col-6-lg mx-auto margin-plus">
             <img src="item/1202.jpg" class="img-thumbnail img-menu " alt="" srcset="">
         </div>
