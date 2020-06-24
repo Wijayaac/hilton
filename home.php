@@ -6,8 +6,8 @@
                 Butuh waktu
                 untuk bersantai ?</p>
         </div>
-        <a href="#"><button class="btn btn-warning btn-over text-light" type="button">Pesan Sekarang <i
-                    class="fas fa-arrow-right">
+        <a href="index.php?pg=penawaran"><button class="btn btn-warning btn-over text-light" type="button">Pesan
+                Sekarang <i class="fas fa-arrow-right">
                 </i></button></a>
     </div>
 </div>
@@ -17,8 +17,8 @@
             <h1 class="text-center">King Suite</h1>
             <p>Berlibur dan bekerja di waktu bersamaan, nikmati waktu liburanmu dan pekerjaan tetap selesai
                 ,tentunya tetap bisa santai.</p>
-            <button class="btn btn-primary btn-menu mx-auto" type="button">Lihat Selengkapnya <i
-                    class="fas fa-angle-right icon-action ml-5"></i></button>
+            <a href="index.php?pg=kamar_king"><button class="btn btn-primary btn-menu mx-auto" type="button">Lihat
+                    Selengkapnya <i class="fas fa-angle-right icon-action ml-5"></i></button></a>
         </div>
         <div class="col-6-lg mx-auto margin-plus">
             <img src="item/1201.jpg" class="img-thumbnail img-menu " alt="" srcset="">
@@ -30,11 +30,11 @@
             <img src="item/1202.jpg" class="img-thumbnail img-menu " alt="" srcset="">
         </div>
         <div class="col-lg-6 px-5 pl-5 pr-5 margin-plus">
-            <h1 class="text-center">King Suite</h1>
+            <h1 class="text-center">Queen Suite</h1>
             <p>Berlibur dan bekerja di waktu bersamaan, nikmati waktu liburanmu dan pekerjaan tetap selesai
                 ,tentunya tetap bisa santai.</p>
-            <button class="btn btn-primary btn-menu mx-auto" type="button">Lihat Selengkapnya <i
-                    class="fas fa-angle-right icon-action ml-5"></i></button>
+            <a href="index.php?pg=kamar_queen"><button class="btn btn-primary btn-menu mx-auto" type="button">Lihat
+                    Selengkapnya <i class="fas fa-angle-right icon-action ml-5"></i></button></a>
         </div>
     </div>
     <div class="row mt-5 pt-5">

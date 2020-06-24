@@ -44,7 +44,7 @@
         </div>
     </div>
     <div class="container text-center my-5 py-5">
-        <a href="#"><button class="btn btn-warning text-light justify-item-center w-50" type="button">Pesan Sekarang <i
-                    class="fas fa-arrow-right"></i></button></a>
+        <a href="index.php?pg=penawaran"><button class="btn btn-warning text-light justify-item-center w-50"
+                type="button">Pesan Sekarang <i class="fas fa-arrow-right"></i></button></a>
     </div>
 </div>
