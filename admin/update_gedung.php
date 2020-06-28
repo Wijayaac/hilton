@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
     <!-- Font awesome Css -->
     <link rel="stylesheet" href="../css/all.min.css" type="text/css">
-
+    <link rel="shortcut icon" href="../img/fire.svg" type="image/x-icon">
     <!-- CDN -->
     <!-- <script src="https://kit.fontawesome.com/0064e4b6fb.js" crossorigin="anonymous"></script> -->
     <!-- Bootstrap CSS -->

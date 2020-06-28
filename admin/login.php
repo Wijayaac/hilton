@@ -17,6 +17,7 @@ session_start();
     <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
     <!-- Font awesome Css -->
     <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="shortcut icon" href="../img/fire.svg" type="image/x-icon">
 
     <!-- CDN -->
     <!-- <script src="https://kit.fontawesome.com/0064e4b6fb.js" crossorigin="anonymous"></script> -->
@@ -24,7 +25,7 @@ session_start();
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
-    <title>Login Administrator</title>
+    <title>Hilton Hotel</title>
 </head>
 
 

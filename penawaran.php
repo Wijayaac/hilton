@@ -24,7 +24,7 @@ while ($baris=mysqli_fetch_array($data)) {
         <div class='col-lg-5'>
             <h2>Rp. $baris[harga]</h2>
             <h5>$baris[nama_kamar]</h5>
-            <h6>3 Hari 2 Malam</h6>
+            <h6>1 Hari 1 Malam</h6>
             <ul class='list-group list-group-flush'>
                 <li class='list-group-item ''>Gratis Sarapan (2 orang)</li>
                 <li class='list-group-item '>Voucher Gratis Spa atau Makan Malam Romantis</li>

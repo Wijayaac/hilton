@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <!-- Font awesome Css -->
     <link rel="stylesheet" href="css/all.min.css" type="text/css">
+    <link rel="shortcut icon" href="img/fire.svg" type="image/x-icon">
 
     <!-- CDN -->
     <!-- <script src="https://kit.fontawesome.com/0064e4b6fb.js" crossorigin="anonymous"></script> -->
@@ -34,8 +35,10 @@ if (isset($_POST['submit'])) {
     $datein=date("Y-m-d",strtotime($input_in));
     $input_out = $_POST['checkout'];
     $dateout=date("Y-m-d",strtotime($input_out));
-    $pajak = $_POST['pajak'];
+   
     $harga = $_POST['harga'];
+    $nama_pemesan =$_POST['pemesan'];
+    $email =$_POST['email'];
     $startTimeStamp = strtotime($datein);
     $endTimeStamp = strtotime($dateout);
     $timeDiff =abs($endTimeStamp - $startTimeStamp);
@@ -47,10 +50,11 @@ if (isset($_POST['submit'])) {
     // and you might want to convert to integer
     $numberDays = intval($numberDays);
     $tsem = $numberDays * $harga  ;
-    $tkon =$tsem *0.1;
-    $total = $tsem -$tkon;
+    $tkon =$tsem * 0.1;
+    $total = $tsem +$tkon;
+    $pajak = 10;
 
-    $query =" INSERT INTO transaksi  VALUES ('$i','$id','$datein','$dateout','$pajak','$total') ";
+    $query =" INSERT INTO transaksi  VALUES ('$i','$id','$datein','$dateout','$pajak','$total','$nama_pemesan','$email') ";
 
     if (mysqli_query($connect, $query)) {
         # code...

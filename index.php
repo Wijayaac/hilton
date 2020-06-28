@@ -14,6 +14,7 @@ $connect = open_connection();
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <!-- Font awesome Css -->
     <link rel="stylesheet" href="css/all.min.css" type="text/css">
+    <link rel="shortcut icon" href="img/fire.svg" type="image/x-icon">
 
     <!-- CDN -->
     <!-- <script src="https://kit.fontawesome.com/0064e4b6fb.js" crossorigin="anonymous"></script> -->
@@ -21,12 +22,12 @@ $connect = open_connection();
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
-    <title>Selamat Datang</title>
+    <title>Hilton Hotel</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand navbar-typo mr-5 pr-5" href="#"><i class="fas fa-fire"></i> Hotel Hilton </a>
+        <a class="navbar-brand navbar-typo mr-5 pr-5" href="index.php"><i class="fas fa-fire"></i> Hotel Hilton </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -59,7 +60,7 @@ $connect = open_connection();
             </div>
         </div>
         <div class="align-right">
-            <a href="#" class=" navbar-typo">
+            <a href="admin/login.php" class=" navbar-typo">
                 <div class="fas fa-user-circle icon"></div>
             </a>
         </div>

@@ -16,6 +16,7 @@ $connect = open_connection();
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <!-- Font awesome Css -->
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="shortcut icon" href="img/fire.svg" type="image/x-icon">
 
     <!-- CDN -->
     <!-- <script src="https://kit.fontawesome.com/0064e4b6fb.js" crossorigin="anonymous"></script> -->
@@ -23,7 +24,7 @@ $connect = open_connection();
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
-    <title>Halaman Checkout</title>
+    <title>Hilton Hotel</title>
 </head>
 
 
@@ -31,7 +32,7 @@ $connect = open_connection();
 <body>
     <div class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-            <a class="navbar-brand navbar-typo mr-5 pr-5" href="#"><i class="fas fa-fire"></i> Hotel Hilton </a>
+            <a class="navbar-brand navbar-typo mr-5 pr-5" href="index.php"><i class="fas fa-fire"></i> Hotel Hilton </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -72,13 +73,13 @@ $connect = open_connection();
     </div>
     <div class="container-fluid h-5 pl-0">
         <div class="row">
-            <div class="col-9 ">
+            <div class="col-9 mt-2 mb-2">
                 <div class="card">
-                    <img class="card-img" src="img/checkout.jpg" alt="" style="height:600px">
+                    <img class="card-img" src="img/checkout.jpg" alt="" style="height:690px">
                 </div>
             </div>
-            <div class="col-3 pt-2 pl-0 mb-0">
-                <div class="jumbotron rounded">
+            <div class="col-3 pl-0 mb-0">
+                <div class="jumbotron rounded mt-2 mb-2 ">
                     <p class="h3 text-center">Selesaikan Pesanan</p>
                     <div class="progress bar-login">
                         <div class="progress-bar bg-primary" style="width: 100%" role="progressbar" aria-valuenow="100"
@@ -92,21 +93,24 @@ $query = (mysqli_query($connect, "SELECT * FROM kamar WHERE kode_kamar='$id'"));
 while ($data = mysqli_fetch_array($query)) {
     # code...
 ?>
-                    <form class="form-group pt-1 form-typo" action="proses_bayar.php" method="POST" role="form">
+                    <form class="form-group form-typo" action="proses_bayar.php" method="POST" role="form">
                         <label for="checkin">Check In</label>
                         <input id="checkin" class="form-control" type="date" name="checkin" placeholder="Waktu Check-in"
                             aria-label="Masukkan Username Anda" required>
                         <label for="checkoutt">Check Out</label>
                         <input id="checkout" class="form-control" type="date" name="checkout"
                             placeholder="Waktu Check-out" aria-label="Masukkan Username Anda" required>
+                        <label for="nama">Nama Anda</label>
+                        <input id="nama" class="form-control" type="text" name="pemesan">
+                        <label for="email">Email</label>
+                        <input id="email" class="form-control" type="email" name="email">
                         <label for="kamar">Type Kamar</label>
                         <input id="kamar" class="form-control" type="text" value="<?= $data['nama_kamar']; ?>"
                             name="nama_kamar" readonly>
                         <label for="kamar">Harga Rp.</label>
                         <input id="kamar" class="form-control" value="<?= $data['harga']; ?>" type="text" name="harga"
                             readonly>
-                        <label for="kamar">Pajak %</label>
-                        <input id="kamar" class="form-control" value="10%" type="text" name="pajak" readonly>
+                        <label for="kamar">**Harga Belum Termasuk Pajak 10%</label>
                         <input type="hidden" name="kode_kamar" value="<?= $data['kode_kamar']; ?>">
                         <button class=" btn btn-primary btn-block mt-3 footer-typo" type="submit"
                             name="submit">Bayar</button>

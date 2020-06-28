@@ -56,4 +56,3 @@
         </div>
     </div>
 </div>
-<i class="fas fa-arrow-up position-absolute  bawah"></i>

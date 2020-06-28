@@ -26,6 +26,7 @@
 *{ 
     font-family:  'cabin';
     size: 14px;
+    scroll-behavior: smooth !important;
 }
 .navbar-typo{
     font-family: 'cabin' !important;
